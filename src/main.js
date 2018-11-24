@@ -10,6 +10,10 @@ import 'mint-ui/lib/style.css'
 import './assets/mui/css/mui.css'
 import './assets/mui/css/icons-extra.css'
 
+// 引入vue-resource
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
+
 import App from './App'
 import router from './router'
 
@@ -17,6 +21,8 @@ import router from './router'
 
 Vue.config.productionTip = false
 Vue.use(MintUI)
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -2,7 +2,7 @@
   <div id="app">    
     <mt-header fixed title="固定在顶部(顶部导航栏)"></mt-header>
 
-    <transition mode="out-in">
+    <transition>
       <router-view></router-view>    
     </transition>
 
@@ -37,9 +37,7 @@ export default {
 
 <style>
 h1{
-  margin-top: 10px;
-  padding: 0;
-  display: none;
+  margin: 0 auto;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -48,11 +46,17 @@ h1{
   text-align: center;
   color: #2c3e50;
   padding-top: 40px; 
+  overflow-x: hidden;
+  background-color: white;
 }
-.v-enter,
-.v-leave-to{
+.v-enter{
   opacity: 0;
   transform: translateX(100%);
+}
+.v-leave-to{
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
 }
 
 .v-enter-active,
