@@ -8,6 +8,7 @@ import 'mint-ui/lib/style.css'
 
 // 引入mui
 import './assets/mui/css/mui.css'
+import './assets/mui/css/icons-extra.css'
 
 import App from './App'
 import router from './router'
