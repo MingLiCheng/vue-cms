@@ -6,6 +6,7 @@ import HomeContainer from '@/components/tabbar/HomeContainer'
 import MemberContainer from '@/components/tabbar/MemberContainer'
 import ShopcarContainer from '@/components/tabbar/ShopcarContainer'
 import SearchContainer from '@/components/tabbar/SearchContainer'
+import NewsList from '@/components/news/NewsList'
 
 
 
@@ -18,7 +19,8 @@ export default new Router({
     { path:'/home',component: HomeContainer },
     { path:'/member',component: MemberContainer },
     { path:'/shopcar',component: ShopcarContainer },
-    { path:'/search',component: SearchContainer }
+    { path:'/search',component: SearchContainer },
+    { path:'/home/newslist',component:NewsList}
   ],
   linkActiveClass:'mui-active' // 覆盖默认的样式 router-link-active
 })

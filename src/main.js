@@ -14,6 +14,8 @@ import './assets/mui/css/icons-extra.css'
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
+
+
 import App from './App'
 import router from './router'
 
@@ -21,6 +23,14 @@ import router from './router'
 
 Vue.config.productionTip = false
 Vue.use(MintUI)
+
+// 引入格式化时间插件
+import moment from 'moment'
+
+Vue.filter('dateFormat',function(dateStr,pattern = 'YYYY-MM-DD HH:mm:ss'){
+  return  moment(dateStr).format(pattern)
+
+})
 
 
 /* eslint-disable no-new */
