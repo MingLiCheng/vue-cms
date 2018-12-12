@@ -7,27 +7,27 @@
     </mt-swipe>
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/newslist">
-          <span class="mui-icon mui-icon-home"></span>
+          <img src="../../images/menu1.png" alt="">
           <div class="mui-media-body">新闻列表</div>
         </router-link></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-          <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+          <img src="../../images/menu2.png" alt="">
           <div class="mui-media-body">Email</div>
         </a></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-          <span class="mui-icon mui-icon-chatbubble"></span>
+          <img src="../../images/menu3.png" alt="">
           <div class="mui-media-body">Chat</div>
         </a></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-          <span class="mui-icon mui-icon-location"></span>
+          <img src="../../images/menu4.png" alt="">
           <div class="mui-media-body">location</div>
         </a></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-          <span class="mui-icon mui-icon-search"></span>
+          <img src="../../images/menu5.png" alt="">
           <div class="mui-media-body">Search</div>
         </a></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-          <span class="mui-icon mui-icon-phone"></span>
+          <img src="../../images/menu6.png" alt="">
           <div class="mui-media-body">Phone</div>
         </a></li>
     </ul>
@@ -69,7 +69,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style  scoped>
+<style lang="scss" scoped>
 .homecontainer{
   /* padding: 20px; */
   /* height: 600px; */
@@ -94,6 +94,12 @@ export default {
 }
 .mui-grid-view.mui-grid-9{
   background-color: #ffffff;
+}
+.mui-table-view{
+  img{
+    width: 60px;
+    height: 60px;
+  }
 }
 
 
