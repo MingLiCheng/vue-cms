@@ -24,6 +24,7 @@ import router from './router'
 Vue.config.productionTip = false
 Vue.use(MintUI)
 
+Vue.http.options.root = 'http://www.liulongbin.top:3005';
 // 引入格式化时间插件
 import moment from 'moment'
 
